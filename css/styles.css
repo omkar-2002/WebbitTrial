@@ -1,0 +1,757 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Landing-Page */
+.landing-img {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.landingPage{
+  /* position: relative; */
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+}
+.nav-container {
+  display: flex;
+  /* position: absolute; */
+  z-index: 110;
+  width: 100%;
+  padding: 20px 100px;
+  padding-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+.nav-container img {
+  background-size: cover;
+  height: 30px;
+}
+.navlinks {
+  flex-basis: 40%;
+  display: block;
+}
+.fa-bars{
+    display: none;
+    font-size: 25px;
+    color: white;
+}
+.navlinks ul {
+    margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  
+}
+
+.navlinks li {
+  font-size: 20px;
+  /* font-weight: bold; */
+  color: white;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-right: rgb(155, 149, 149) solid 1px;
+  padding-right: 8px;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.navlinks a:after {
+    content: "";
+    position: absolute;
+    background-color: #ff0000;
+    height: 3px;
+    width: 0%;
+    bottom: -6px;
+    left: 0%;
+    transition: 0.4s;
+    z-index: 20;
+  }
+  
+  .navlinks a:hover::after {
+    width: 100%;
+  }
+
+ #navlinks-res {
+    margin: 0;
+   position: absolute;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    left: -100%;
+    z-index: 150;
+    top: 0;
+    opacity: 0.93;
+  } 
+  
+  #navlinks-res ul{
+      position: relative;
+      width: 100%;
+  }
+
+  .fa-xmark{
+      position: absolute;
+      right: 0;
+      font-size: 30px;
+      display: none;
+      color: white;
+      margin-right: 20px;
+  }
+
+  #navlinks-res a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+#navlinks-res a:after {
+    content: "";
+    position: absolute;
+    background-color: #ff0000;
+    height: 3px;
+    width: 0%;
+    bottom: -6px;
+    left: 0%;
+    transition: 0.4s;
+    z-index: 60;
+  }
+  
+  #navlinks-res a:hover::after {
+    width: 100%;
+  }
+  #navlinks-res li{
+      font-size: 20px;
+      font-weight: 500;
+      list-style-type: none;
+      margin-top: 40px;
+      font-family: 'Montserrat', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+  #navlinks-res.active{
+    left: 0px;
+  }
+
+  .body-builder{
+    background-size: cover;
+    position: absolute;
+ height: 100vh;
+left: 15%;
+  }
+
+
+.landing-logo{
+  position: absolute;
+  height: 230px;
+  left: 30%;
+  bottom: 23%;
+}
+/* Landing-Page */
+
+/* About-Page */
+#about{
+  padding: 30px;
+  padding-bottom: 50px;
+background-image:  linear-gradient(320deg, #12100e 0%, #3d3d3d 100%);
+}
+
+.about-img{
+  width: 100%;
+height: 100vh;
+background-size: cover;
+}
+
+.about-info{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.heading{
+  width: 100%;
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading h2{
+  text-align: center;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+.workouts{
+margin-top: 30px;
+  flex-basis: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+flex-wrap: wrap;
+}
+.category-card{
+  display: flex;
+  padding: 25px 25px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.category-img-div{
+  overflow: hidden;
+width: 200px;
+height: 200px;
+border-radius: 100px;
+border: rgb(114, 107, 107) solid 4px;
+}
+
+.category-img-div img{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  transition: transform .5s;
+}
+
+.category-img-div img:hover{
+  transform: scale(1.25);
+}
+
+.category-card h2{
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+/* About-Page */
+
+/* Instructor-Page */
+.instructor{
+  background-image: url("../assets/images/smokefix\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  justify-content: space-evenly;
+}
+
+.instrucot-img{
+  flex-basis: 30%;
+height: 100%;
+/* position: relative; */
+}
+
+.instrucot-img img{
+height: 100%;
+width: 100%;
+
+}
+
+.instrucot2-img{
+  flex-basis: 35%;
+  height: 100%;
+  /* position: relative; */
+}
+
+.instrucot2-img img{
+  height: 100%;
+  width: 100%;
+  
+  }
+.about-instructor{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+.instructor-info{
+  margin-top: 50px;
+  padding: 30px;
+background-color: black;
+opacity: 0.55;
+border: solid rgb(58, 31, 31) 4px;
+}
+
+.info{
+color: white;
+  font-size: 18px;
+}
+
+.info span{
+  color: red;
+  font-size: 25px;
+}
+
+.inst-heading h2{
+  color: white;
+  font-size: 30px;
+}
+.inst-heading{
+  position: relative;
+} 
+ .line1{
+  position: absolute;
+  height: 2px;
+  left: -50px;
+  top: -20px;
+  background-color: white;
+  width: 100%;
+}
+
+.line2{
+  right: -50px;
+  bottom: -20px;
+  position: absolute;
+  height: 2px;
+  background-color: rgb(255, 0, 0);
+  width: 100%;
+}
+/* Instructor-Page */
+
+/* Pricing-page */
+#pricing{
+background-image:  radial-gradient(50% 50% at 50% 50%, rgba(35, 30, 30, 0.68) 0%, #1C1A1A 100%);
+  width: 100%;
+  padding: 30PX;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-card-flex{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* margin-top: 40px; */
+  /* flex-basis: 80%; */
+  flex-wrap: wrap;
+  width: 100%;
+  /* justify-content: center; */
+}
+
+
+.pricingCards{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:20px 0;
+ /* width: 300px;
+ height: 450px; */
+background-image: linear-gradient(138.75deg, #8E0E00 22.79%, #1F1C18 68.56%);;
+ border-radius: 20px;
+ overflow: hidden;
+transition: transform .5s;
+}
+
+
+
+
+.pricingCards:hover{
+  transform: scale(1.078);
+}
+
+.pricingCards1{
+  margin:20px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+
+ height:100%; 
+background-image: linear-gradient(138.75deg, #8E0E00 22.79%, #1F1C18 68.56%);;
+ border-radius: 20px;
+ overflow: hidden;
+transition: transform .5s;
+
+}
+
+.pricingCards1:hover{
+  transform: scale(1.078);
+}
+.pricing-card{
+width: 100%;
+height: 180px;
+}
+
+.img-pricing{
+  height: 100%;
+  width: 100%;
+}
+
+.heading-pricing{
+  text-align: center;
+  color: white;
+  background-color:  rgba(0, 0, 0, 0.7);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  }
+
+.heading-pricing h2{
+  margin: 0;
+  font-size: 20px;
+}
+
+
+.heading-pricing2{
+  text-align: center;
+  color: white;
+  background-color:  rgba(0, 0, 0, 0.7);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  }
+.heading-pricing2 h2{
+  margin: 0;
+  font-size: 18px;
+}
+
+
+
+.description-pricing{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-basis: 40%;
+  background-color: aqua;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+ background-color:  rgba(0, 0, 0, 0.22);
+}
+
+
+.btn{
+ margin: 10px;
+}
+
+.description-pricing p {
+  width: 50%;
+  text-align: center;
+}
+
+.pricing-card2{
+  width: 100%;
+  height: 150px;
+  }
+/* Pricing-page */
+
+
+
+/* footer */
+.footer{
+  /* position: relative; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: black;
+  padding-bottom: 0;
+}
+
+.getInTouch{
+  width: 100%;
+border-bottom: solid 1px rgb(80, 74, 74);
+}
+
+.bottom-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-ul{
+  display: flex;
+  flex-direction: column;
+ padding: 15px
+}
+
+
+
+.contact-ul li{
+  list-style-type: none;
+  margin: 10px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.fa-solid{
+  color: white;
+  font-size: 20px;
+}
+.footer-li-p{
+  margin-left: 10px;
+  color: white;
+  margin-bottom: 0;
+}
+/* .contact-ul p{
+  margin-right: 15px;
+} */
+
+.contact{
+  margin-top: 20px;
+  border-left: solid 1px white;
+}
+
+.location{
+  border-left: solid 1px white;
+  margin-top: 20px;
+padding-left: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutStrong{
+  margin-top: 20px;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(253, 235, 235, 0.089);
+  flex-basis: 30%;
+  
+}
+
+.aboutStrong p{
+  color: white;
+  margin-top: 20px;
+}
+
+.socialmedia{
+  /* width: 100%; */
+  padding: 20px;
+  /* position: absolute; */
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+}
+
+.socialmedia i {
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.socialmedia a{
+  color: white;
+  text-decoration: none;
+}
+/* footer */
+
+
+@media only screen and (max-width: 900px) {
+   .navlinks{
+       display: none;
+   }
+   .fa-bars{
+       display: block;
+   }
+   .fa-xmark{
+     display: block;
+   }
+   .body-builder{
+     height: 100vh;
+     width: 100%;
+     left: 0%;
+   }
+   .landing-logo{
+    position: absolute;
+    height: 150px;
+    left: 20%;
+    bottom: 20%;
+  }
+
+  .inst-heading h2{
+    font-size: 26px;
+  }
+
+  .instructor-info{
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .info{
+    font-size: 15px;
+  }
+
+  .instructor{
+    flex-direction: column;
+  }
+
+  .aboutStrong{
+   
+    flex-basis: 100%;
+    
+  }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .nav-container{
+      padding: 20px;
+    }
+    .nav-container-reg{
+      padding: 20px;
+    }
+    .body-builder{
+      left: 0%;
+    }
+
+    .landing-logo{
+      position: absolute;
+      height: 100px;
+      left: 6%;
+      bottom: 25%;
+    }
+
+    .inst-heading h2{
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    .info{
+      color: white;
+        font-size: 14px;
+      }
+
+      .instructor-info{
+        padding: 10px;
+        margin-top: 30px;
+      }
+
+      .line1{
+        margin-top: 10px;
+        top: -5px;
+      }
+      .line2{
+        bottom: -5px;
+      }
+
+      .instructor {
+        padding: 0 10px;
+      }
+
+    
+   }
+
+
+   /* Register-Page */
+.register-page{
+  /* height: 100vh; */
+  width: 100%;
+align-items: center;
+background-image:  linear-gradient(320deg, #12100e 0%, #3d3d3d 100%);
+display: flex;
+position: relative;
+flex-direction: column;
+padding: 20px 0;
+}
+
+
+
+.nav-container-reg {
+  display: flex;
+  width: 100%;
+  padding: 20px 100px;
+  padding-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+.nav-container-reg img {
+  background-size: cover;
+  height: 30px;
+}
+.formdiv{
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* justify-content: start; */
+  /* align-items: center; */
+  text-align: left;
+  background-color: white;
+  padding: 20px;
+  /* margin-top: 20px; */
+  margin: 20px 0;
+}
+
+.formdiv input{
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 10px;
+
+}
+
+.formdiv label{
+  color: black;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.formdiv button{
+  padding: 10px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border: solid black 1px;
+  margin-top: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.formdiv button:hover{
+  background-color: black;
+  color: white;
+  border: solid white 1px;
+
+}
+
+
+@media only screen and (max-width: 600px){
+  .formdiv{
+     
+    width: 90%;
+    
+  }
+}
+   /* Register-Page */
